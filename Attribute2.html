@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h2class {
+            color: red;
+        }
+    </style>
+    <script>
+                   function addAttribute() {
+                    var inputRef= document.getElementById('input1')
+                    var h2Ref=    document.getElementById('h2Id')
+                     inputRef.setAttribute('placeholder','Enter Name')
+                     h2Ref.setAttribute('class','h2class')
+                   }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;margin-top: 100px;">
+        <h2 id="h2Id">Attributes Functions</h2>
+      <input type="text" id="input1" />
+      <button onclick="addAttribute()">Add Attribute</button>
+    </div>
+</body>
+</html>

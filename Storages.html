@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnBrowserStorage() {
+         sessionStorage.setItem('name','A2N')
+         sessionStorage.setItem('city','Banglore')
+
+
+        }
+        function fnGetData(){
+         var name =   sessionStorage.getItem('name')
+        //  var city = sessionStorage.getItem('city')
+           var pref = document.querySelector('#name')
+           var pref2 = document.querySelector('#city')
+         pref.innerText = name
+        //  pref2.innerText = city
+         pref2.innerText = sessionStorage.getItem('city')
+        
+        }
+
+        function fnRemoveData() {
+            // sessionStorage.removeItem('name')
+            sessionStorage.clear()
+        }
+    </script>
+</head>
+<body>
+    <h2>Browser Storages</h2>
+    <p id="name"></p>
+    <p id="city"></p>
+    <button onclick="fnBrowserStorage()">Insert Data</button>
+    <button onclick="fnGetData()">Get Data</button>
+    <button onclick="fnRemoveData()">Remove Data</button>
+</body>
+</html>

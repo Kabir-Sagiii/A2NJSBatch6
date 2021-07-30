@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h2Ref {
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+                function fn() {
+                    
+                   var inputRef= document.getElementById('hRef')
+                //    inputRef.setAttribute('placeholder','Enter Name')
+                  inputRef.removeAttribute('placeholder')
+                   var attributeValue = inputRef.getAttribute('id')
+                   alert(attributeValue)
+                }
+    </script>
+</head>
+<body>
+     <div style="text-align: center;margin-top: 100px;">
+         <!-- <h2 id="hRef">Welcome to JS</h2> -->
+        Name: <input type="text" id="hRef" placeholder="Enter Name of person" />
+         <button onclick="fn()">Click Me</button>
+     </div>
+</body>
+</html>

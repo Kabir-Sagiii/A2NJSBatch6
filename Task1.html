@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnShowHidePassword() {
+           var passwordRef= document.getElementById('input1')
+           var buttonRef=  document.getElementById('btn')
+
+           
+           if(passwordRef.getAttribute('type')=== 'password'){
+               passwordRef.setAttribute('type','text')
+               buttonRef.innerText = "Hide Password"
+           } else {
+                passwordRef.setAttribute('type','password')
+                buttonRef.innerText = "Show Password"
+           }
+             
+
+
+        
+        }
+    </script>
+</head>
+<body>
+    <div>
+       
+      Password: <input type="password" placeholder="Enter Password" id="input1" />
+      <button onclick="fnShowHidePassword()" id="btn">Show Password</button>
+
+    </div>
+</body>
+</html>

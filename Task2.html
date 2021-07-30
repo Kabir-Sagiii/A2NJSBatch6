@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showhidePassword() {
+          var passwordRef=  document.getElementById('psd')
+          var btnRef = document.getElementById('btn')
+           if(passwordRef.getAttribute('type')=== 'password') {
+               passwordRef.setAttribute('type','text')
+               btnRef.innerText="Hide Password"
+           } else {
+                passwordRef.setAttribute('type','password')
+                btnRef.innerText="Show Password"
+           }
+            
+
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;margin-top: 100px;">
+        <h2>Show/Hide Password</h2>
+     
+        Password:<input type="password" id="psd" />
+        <button onclick="showhidePassword()" id="btn">Show Password</button>
+    </div>
+</body>
+</html>

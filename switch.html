@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+         function fnStatus(event) {
+             
+           var h3Ref= document.querySelector('h3')
+           console.log(h3Ref.style)
+             switch(event.target.id) {
+             case 'btn1' :
+                 h3Ref.innerText = "Good Morning"
+                 h3Ref.style.color = "White"
+                 h3Ref.style.backgroundColor = "blue"
+                 h3Ref.style.padding = "50px"
+                 break;
+             case 'btn2' :
+             h3Ref.innerText = "Good Afternoon"
+                 h3Ref.style.color = "White"
+                 h3Ref.style.backgroundColor = "red"
+                 h3Ref.style.padding = "30px"
+                 break;
+
+                 case 'btn3' :
+             h3Ref.innerText = "Good Evening"
+                 h3Ref.style.color = "White"
+                 h3Ref.style.backgroundColor = "green"
+                 h3Ref.style.padding = "10px"
+                 break;
+             }
+         }
+     </script>
+</head>
+<body>
+     <div style="text-align: center;margin-top: 100px;">
+        <h3>Welcome to JavaScript</h3>
+        <button onclick="fnStatus(event)" id="btn1">Good Morning</button>
+        <button onclick="fnStatus(event)" id="btn2">Good Afternoon</button>
+        <button onclick="fnStatus(event)" id="btn3">Good Evening</button>
+
+     </div>
+</body>
+</html>
